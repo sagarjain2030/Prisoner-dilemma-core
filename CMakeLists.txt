@@ -19,7 +19,7 @@ else()
     message(FATAL_ERROR "No source files found in src directory")
 endif()
 
-find_package(Boost REQUIRED COMPONENTS system)
+find_package(Boost REQUIRED COMPONENTS system beast)
 
 # If Boost is found, link it
 if (Boost_FOUND)
